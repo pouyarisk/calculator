@@ -17,8 +17,8 @@ if l == 'E':
     C1 = ['totel', 'subtraction', 'Multiplication', 'Division', 'Unknown']
     d = str(c2('math(M) or calculator(C)?',['M','C']))
     if d == 'M':
-        c = str(c2('Ok.Enter your work=',M))
-        a = int(input2('Enter Number#1='))
+        c = str(c2('Ok.Enter your work.',M))
+        a = int(input2('Enter Number #1='))
 
         if c == 'Tom number':
             math2.math3(a).Tom()
