@@ -6,13 +6,13 @@ class calculator:
         self.no=No
         self.no2=No2
     def totel(self):
-        print2(self.no+self.no2)
+        print2(self.no + self.no2)
     def subtraction(self):
-        print2(self.no-self.no2)
+        print2(self.no - self.no2)
     def Multiplication(self):
-        print2(self.no*self.no2)
+        print2(self.no * self.no2)
     def Division(self):
-        print2(self.no/self.no2)
+        print2(self.no / self.no2)
     def Unknown(self):
         a=self.no
         b=self.no2
