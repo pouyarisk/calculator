@@ -26,20 +26,20 @@ class arabi1:
     def __init__(self,no):
         self.no1=no
     def ravesh_gharbol(self):
-        prime = [True for i in range(self.no1+1)] 
-      
+        prime = [True for i in range(self.no1+1)]
+
         p = 2
-        while(p * p <= self.no1): 
-                
-            if (prime[p] == True): 
-                    
-                for i in range(p*2,self.no1+1,p): 
+        while(p * p <= self.no1):
+
+            if (prime[p] == True):
+
+                for i in range(p*2,self.no1+1,p):
                     prime[i] = False
             p += 1
         c = 0
-       
-        for p in range(2, self.no1+1): 
-            if prime[p]: 
+
+        for p in range(2, self.no1+1):
+            if prime[p]:
                 c += 1
         print2("عدد الأعداد الأولية ="+str(c))
     def moadeleye_3n(self):
@@ -73,4 +73,3 @@ class arabi1:
             print2(str(self.no1)+'إنه توم.')
         else:
             print2(str(self.no1)+'ليس توم')
-
