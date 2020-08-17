@@ -1,7 +1,7 @@
 import pyautogui
 def print2(pa):
     pyautogui.alert(str(pa))
-class calculator:
+class arabi:
     def __init__(self,No,No2):
         self.no=No
         self.no2=No2
@@ -16,13 +16,13 @@ class calculator:
     def نا_معلوم(self):
         a=self.no
         b=self.no2
-        c=int(input('تا چند مرحله پيش رود؟'))
+        c=int(input('کم عدد الخطوات التي تستغرقها ؟'))
         for x in range(1,c+1):
             a=(a+b)/2
             print2(a)
         d=a
-        print2('عدد نهايي='+str(d))
-class math2:
+        print2('الرقم النهائي ='+str(d))
+class arabi1:
     def __init__(self,no):
         self.no1=no
     def ravesh_gharbol(self):
@@ -41,12 +41,12 @@ class math2:
         for p in range(2, self.no1+1): 
             if prime[p]: 
                 c += 1
-        print2("تعداد اعداد اول="+str(c))
+        print2("عدد الأعداد الأولية ="+str(c))
     def moadeleye_3n(self):
         w=''
         totel=0
         if self.no1==4 or self.no1==2 or self.no1==1:
-            print2('عدد مورد نظر اشتباه مي باشد')
+            print2('الرقم المطلوب غير صحيح.')
         else:
             while not self.no1==4:
                 if self.no1%2==0:
@@ -57,8 +57,8 @@ class math2:
                     self.no1=self.no1*3+1
                     totel+=1
                     w=w+str(self.no1)+' : '
-            print2(str(w)+'جواب هميشگي')
-            print2('=تعداد کل اعداد مساوي است با'+str(totel))
+            print2(str(w)+'إجابة دائمة')
+            print2('العدد الاجمالي للأرقام متساوي ='+str(totel))
     def factorial(self):
         z=0
         for b in range(1,self.no1+1):
@@ -70,7 +70,7 @@ class math2:
             if self.no1%b==0:
                 c+=b
         if c==self.no1:
-            print2(str(self.no1)+'تام است.')
+            print2(str(self.no1)+'إنه توم.')
         else:
-            print2(str(self.no1)+'تام نيست')
+            print2(str(self.no1)+'ليس توم')
 

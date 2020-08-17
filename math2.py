@@ -59,7 +59,7 @@ class math3:
                     w=w+str(self.no1)+' : '
             print2(w+'The permanent answer')
             print2('The total number is equal to= ',totel)
-    def factoriel(self):
+    def factorial(self):
         z=0
         for b in range(1,self.no1+1):
             z=z*b+1
