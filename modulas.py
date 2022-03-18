@@ -45,6 +45,7 @@ if l == 'E':
             math2.calculator(a, b).Division()
         if c == 'Unknown':
             math2.calculator(a, b).Unknown()
+    t2 = time.time()
 if l == 'P':
     M = ['اعداد تام', 'اعداد اول', 'فاکتوريل', 'سه ن بعلاوه يک', 'روش غربال']
     C1 = ['جمع', 'منها', 'ضرب', 'تقسيم', 'نا_معلوم']
@@ -76,7 +77,7 @@ if l == 'P':
             math1.calculator(a, b).تقسيم()
         if c == 'نا_معلوم':
             math1.calculator(a, b).نا_معلوم()
-
+    t2 = time.time()
 if l == 'A':
     M = ['الأرقام الإجمالية', 'الأعداد الأولية', 'عاملي', 'ثلاثة ن زائد 1', 'طريقة الفرز']
     C1 = ['مجموع', 'منها', 'ضرب', 'قطاع', 'مجهول']
@@ -108,6 +109,5 @@ if l == 'A':
             arabi.arabi(a, b).تقسيم()
         if c == 'مجهول':
             arabi.arabi(a, b).نا_معلوم()
-
-t2 = time.time()
+    t2 = time.time()
 print2('time requast='+str(t2 - t1))

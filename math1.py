@@ -19,7 +19,6 @@ class calculator:
         c=int(input('تا چند مرحله پيش رود؟'))
         for x in range(1,c+1):
             a=(a+b)/2
-            print2(a)
         d=a
         print2('عدد نهايي='+str(d))
 class math2:
