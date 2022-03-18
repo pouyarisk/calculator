@@ -1,6 +1,5 @@
 import math1
 import math2
-import time
 import arabi
 import pyautogui
 def input2(pa):
@@ -11,7 +10,6 @@ def c2(pb,pc):
     return pp
 def print2(pd):
     pyautogui.alert(pd)
-t1 = time.time()
 l = str(c2('Arabic(A) or English(E) or Persian(P)?',['A','E','P']))
 if l == 'E':
     M = ['Tom number', 'Prime number', 'factorial', 'three n plas one', 'Screening method']
@@ -76,7 +74,6 @@ if l == 'P':
             math1.calculator(a, b).تقسيم()
         if c == 'نا_معلوم':
             math1.calculator(a, b).نا_معلوم()
-
 if l == 'A':
     M = ['الأرقام الإجمالية', 'الأعداد الأولية', 'عاملي', 'ثلاثة ن زائد 1', 'طريقة الفرز']
     C1 = ['مجموع', 'منها', 'ضرب', 'قطاع', 'مجهول']
@@ -108,6 +105,3 @@ if l == 'A':
             arabi.arabi(a, b).تقسيم()
         if c == 'مجهول':
             arabi.arabi(a, b).نا_معلوم()
-
-t2 = time.time()
-print2('time requast='+str(t2 - t1))
