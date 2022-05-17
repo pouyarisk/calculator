@@ -58,10 +58,20 @@ class math2:
                     w=w+str(self.no1)+' : '
             print2(str(w)+'جواب هميشگي')
             print2('=تعداد کل اعداد مساوي است با'+str(totel))
+    def three_n_plus_one(self):
+        a=1
+        for b in range(1,self.no1):
+            while not b==4: 
+                if b%2==0:
+                    b=int(b/2)
+                else:
+                    b=b*3+1
+            a=a+1
+        print2(a)
     def factorial(self):
-        z=0
-        for b in range(1,self.no1+1):
-            z=z*b+1
+        z=1
+        for b in range(1,self.no1):
+            z=z*(b+1)
         print2(z)
     def Tom(self):
         c=0
